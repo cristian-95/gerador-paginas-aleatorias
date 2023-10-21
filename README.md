@@ -4,6 +4,8 @@
 
 - Gera N sites simples cada um com um numero aleatório de links para outros sites gerados;
 
+- Exemplo de uso: `./script.sh  5 0` (gera 5 sites com numero mini de links  = 0)
+
 ## graph.py:
 
 - Scaneia a pasta `/sites` e gera um arquivo de descrição de grafos .dot
