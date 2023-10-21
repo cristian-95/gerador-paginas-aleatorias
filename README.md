@@ -4,7 +4,7 @@
 
 - Gera N sites simples cada um com um numero aleatório de links para outros sites gerados;
 
-- Exemplo de uso: `./script.sh  5 0` (gera 5 sites com numero mini de links  = 0)
+- Exemplo de uso: `./script.sh  5 0` (gera 5 sites com numero minimo de links  = 0)
 
 ## graph.py:
 
@@ -14,6 +14,6 @@
 
 - para rodar o script python instale:
 
-- `pip install beautifulsoup4`
-- `pip install networkx`
-- `pip install pydot`
+- ```pip install beautifulsoup4```
+- ```pip install networkx```
+- ```pip install pydot```
