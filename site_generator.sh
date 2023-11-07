@@ -15,8 +15,13 @@ min_links=$2
 # Diretório onde os sites serão criados
 output_dir="sites"
 
-# Crie o diretório se ele não existir
-mkdir -p "$output_dir"
+# Verifique se o diretório "sites" existe e, se existir, exclua todos os arquivos
+if [ -d "$output_dir" ]; then
+    rm -rf "$output_dir"/*
+else
+    # Crie o diretório se ele não existir
+    mkdir -p "$output_dir"
+fi
 
 # Loop para criar os sites
 for ((site_num=1; site_num<=$num_sites; site_num++)); do
