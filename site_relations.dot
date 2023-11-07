@@ -1,0 +1,17 @@
+strict digraph  {
+site3;
+site1;
+site4;
+site6;
+site2;
+site5;
+site3 -> site1;
+site1 -> site6;
+site1 -> site5;
+site6 -> site1;
+site6 -> site2;
+site2 -> site5;
+site5 -> site4;
+site5 -> site1;
+site5 -> site2;
+}
