@@ -1,8 +1,10 @@
 # Gerador de sites aleatórios
 
-## script.sh:
+## site_generator.sh:
 
 - Gera N sites simples cada um com um numero aleatório de links para outros sites gerados;
+
+- Em seguida faz uma chamada para **graph.py**
 
 - Exemplo de uso: `./script.sh  5 0` (gera 5 sites com numero minimo de links  = 0)
 
@@ -16,7 +18,10 @@
 
 - a partir do arquivo .dot, monta um grafo e aplica o algortmo page rank
 
+---
+
 - para rodar os scripts python instale:
+
 
 - ```pip install beautifulsoup4```
 - ```pip install networkx```

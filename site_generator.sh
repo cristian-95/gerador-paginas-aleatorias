@@ -63,3 +63,6 @@ for ((site_num=1; site_num<=$num_sites; site_num++)); do
 
     echo "Site $site_name criado em $site_file"
 done
+
+echo ""
+python3 graph.py

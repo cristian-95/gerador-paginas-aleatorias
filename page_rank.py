@@ -23,26 +23,6 @@ def read_dot_file(file_name):
     return G
 
 # Função para implementar o algoritmo PageRank
-# def pagerank(graph, num_iterations=100, damping_factor=0.85):
-#     nodes = list(graph.nodes)
-#     num_nodes = len(nodes)
-#     initial_pagerank = 1 / num_nodes
-#     pagerank_dict = {node: initial_pagerank for node in nodes}
-    
-#     for _ in range(num_iterations):
-#         new_pagerank_dict = {node: 0 for node in nodes}
-#         for node in nodes:
-#             neighbors = list(graph.predecessors(node))
-#             if len(neighbors) > 0:
-#                 for neighbor in neighbors:
-#                     new_pagerank_dict[node] += pagerank_dict[neighbor] / len(neighbors)
-#             else:
-#                 new_pagerank_dict[node] += pagerank_dict[node] / num_nodes
-#         for node in nodes:
-#             new_pagerank_dict[node] = (1 - damping_factor) / num_nodes + damping_factor * new_pagerank_dict[node]
-#         pagerank_dict = new_pagerank_dict
-    
-#     return pagerank_dict
 def pagerank(graph, damping_factor=0.85, max_iterations=100, tol=1e-6):
     nodes = list(graph.nodes())
     num_nodes = len(nodes)
@@ -68,6 +48,7 @@ def pagerank(graph, damping_factor=0.85, max_iterations=100, tol=1e-6):
             break
     
     return pagerank
+
 
 # Nome do arquivo .dot
 dot_file = 'site_relations.dot'
