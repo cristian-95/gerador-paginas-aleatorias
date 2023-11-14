@@ -1,12 +1,14 @@
 # Gerador de sites aleatórios
 
+Parte da abordagem simulada do trabalho sobre Pagerank
+
 ## site_generator.sh:
 
 - Gera N sites simples cada um com um numero aleatório de links para outros sites gerados;
 
 - Em seguida faz uma chamada para **graph.py**
 
-- Exemplo de uso: `./script.sh  5 0` (gera 5 sites com número mínimo de links  = 0)
+- Exemplo de uso: `./site_generator.sh  5 0` (gera 5 sites com número mínimo de links  = 0)
 
 ## graph.py:
 
